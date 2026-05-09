@@ -1,0 +1,29 @@
+.app { max-width: 540px; margin: 0 auto; padding: 2rem 1rem; }
+.app-title { font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem; }
+.search-bar { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+.search-input { flex: 1; padding: 0.75rem 1rem; border: 2px solid #e2e8f0; border-radius: 12px; outline: none; }
+.search-input:focus { border-color: #4f46e5; }
+.search-btn { padding: 0.75rem 1.5rem; background: #4f46e5; color: white; border: none; border-radius: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.search-btn:hover:not(:disabled) { background: #4338ca; }
+.search-btn:disabled { background: #a5b4fc; cursor: not-allowed; }
+.error { background: #fee2e2; color: #dc2626; padding: 0.75rem 1rem; border-radius: 12px; margin-bottom: 1rem; }
+.hint { text-align: center; color: #aaa; margin-top: 3rem; }
+.weather-card { background: white; border-radius: 20px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.weather-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; }
+.weather-top h2 { font-size: 1.8rem; font-weight: 700; }
+.date { font-size: 0.85rem; color: #888; margin-top: 4px; text-transform: capitalize; }
+.desc { font-size: 1rem; color: #555; margin-top: 8px; text-transform: capitalize; }
+.temp-block { display: flex; flex-direction: column; align-items: center; }
+.temp { font-size: 2.5rem; font-weight: 700; color: #4f46e5; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+.stat { background: #f8fafc; border-radius: 12px; padding: 0.75rem; text-align: center; }
+.stat-label { display: block; font-size: 0.75rem; color: #888; margin-bottom: 4px; }
+.stat-value { display: block; font-size: 1rem; font-weight: 600; }
+.forecast-card { background: white; border-radius: 20px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.forecast-title { font-size: 0.85rem; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+.forecast-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; }
+.forecast-item { display: flex; flex-direction: column; align-items: center; background: #f8fafc; border-radius: 12px; padding: 0.75rem 0.25rem; gap: 4px; }
+.f-day { font-size: 0.8rem; color: #888; text-transform: capitalize; }
+.f-temp { font-size: 1rem; font-weight: 700; }
+.f-min { font-size: 0.85rem; color: #aaa; }
+@media (max-width: 480px) { .stats { grid-template-columns: repeat(2, 1fr); } }
